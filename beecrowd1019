@@ -1,0 +1,33 @@
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+        Scanner ler = new Scanner(System.in);
+
+        int tempo = ler.nextInt();
+        int hora = 0;
+        int minuto = 0;
+        int segundo = 0;
+
+        for (int i = 0; i < 3; i++) {
+            if (tempo / 3600 >= 1){
+                hora = tempo / 3600;
+                tempo = tempo % 3600;
+            }
+            else if (tempo / 60 >= 1) {
+                minuto = tempo / 60;
+                tempo = tempo % 60;
+            }
+            else if (tempo >= 1) {
+                segundo = tempo;
+                tempo = 0;
+            }
+        }
+        System.out.println(hora + ":" + minuto + ":" + segundo);
+ 
+    }
+ 
+}
