@@ -1,0 +1,19 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner ler = new Scanner(System.in);
+        double A = ler.nextDouble();
+        double B = ler.nextDouble();
+        double pesoA = 3.5;
+        double pesoB = 7.5;
+        double media = ((A * pesoA) + (B * pesoB))/11.00;
+
+        System.out.printf("MEDIA = %.5f%n" , media);
+ 
+    }
+ 
+}
