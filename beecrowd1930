@@ -1,0 +1,29 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+        Scanner ler = new Scanner(System.in);
+        String string = ler.nextLine();
+        String[] tomadas = string.split(" ");
+
+        String tom1, tom2, tom3, tom4;
+        int tomt = 0;
+        tom1 = (tomadas[0]);
+        tom2 = (tomadas[1]);
+        tom3 = (tomadas[2]);
+        tom4 = (tomadas[3]);
+
+        for ( int i = 1; i < 4; i ++ ){
+            int bej = Integer.parseInt(tomadas[i]);
+            tomt = tomt + bej;
+            tomt --;
+        }
+        int tom1i = Integer.parseInt(tom1);
+        tomt = tomt + tom1i;
+        System.out.println(tomt);
+    }
+ 
+}
