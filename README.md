@@ -1,0 +1,1 @@
+durante as férias pretendo aprimorar minhas habilidades de programação através do beecrowd, e neste repositório se encontram códigos que apresentam as soluções de determinados exercícios do beecrowd. Então, sintam-se a vontade.
