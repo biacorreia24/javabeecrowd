@@ -1,0 +1,67 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        Scanner ler = new Scanner(System.in);
+        
+        final int n = ler.nextInt();
+        int N = n;
+        int ced100 = 0;
+        int ced50 = 0;
+        int ced20 = 0;
+        int ced10 = 0;
+        int ced5 = 0;
+        int ced2 = 0;
+        int ced1 = 0;
+
+        for (int i = 0; i < 7; i++) {
+            if ((N/100) >= 1){
+                ced100 = N/100;
+                N = N%100;
+            }
+            else if ((N/50) >= 1){
+                ced50 = N/50;
+                N = N%50;
+            }
+            else if ((N/20) >= 1){
+                ced20 = N/20;
+                N = N%20;
+            }
+            else if ((N/10) >= 1){
+                ced10 = N/10;
+                N = N%10;
+            }
+            else if ((N/5) >= 1){
+                ced5 = N/5;
+                N = N%5;
+            }
+            else if ((N/2) >= 1){
+                ced2 = N/2;
+                N = N%2;
+            }
+            else if (N >= 1){
+                ced1 = N;
+                N = 0;
+            }
+        }
+        System.out.println(n);
+        System.out.println(ced100 + " nota(s) de R$ 100,00");
+        System.out.println(ced50 + " nota(s) de R$ 50,00");
+        System.out.println(ced20 + " nota(s) de R$ 20,00");
+        System.out.println(ced10 + " nota(s) de R$ 10,00");
+        System.out.println(ced5 + " nota(s) de R$ 5,00");
+        System.out.println(ced2 + " nota(s) de R$ 2,00");
+        System.out.println(ced1 + " nota(s) de R$ 1,00");
+
+
+
+
+
+    }
+ 
+ 
+    
+ 
+}
